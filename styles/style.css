@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Google-Sans';
+    src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
+    url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google-Sans';
+    src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
+    url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Google-Sans';
+    src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
+    url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
+    font-weight: italic;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Google-Sans';
+    src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
+    url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
+    font-weight: medium;
+    font-style: medium;
+}
+
+body {
+    /* Если шрифт не подгрузился, используем системный без засечек */
+    font-family: 'Google-Sans', sans-serif; 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header__logo img {
+    width: 115px;
+    height: 34px;
+}
+
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 40px; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    font-family: 'Google-Sans', sans-serif; 
+}
+
+.nav-list__link {
+    text-decoration: none;
+    color: #212832;
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    height: 22px; 
+    line-height: 22px;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-signup {
+    width: 102px;
+    height: 40px;
+    border: 1px solid #212832;
+    border-radius: 5px;
+    background: transparent;
+    font-family: 'Google-Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #212832;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+}
+
+.lang-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lang-select span {
+    width: 23px;
+    height: 22px;
+    display: inline-block;
+}
