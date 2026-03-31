@@ -2,31 +2,31 @@
     font-family: 'Google-Sans';
     src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
     url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
-    font-weight: normal;
+    font-weight: 500px;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Google-Sans';
-    src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
-    url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
-    font-weight: bold;
+    src: url(..//fonts/sans/GoogleSans-BoldItalic.woff2) format('woff2'),
+    url(..//fonts/sans/GoogleSans-BoldItalic.woff) format('woff');
+    font-weight: Italic;
     font-style: bold;
 }
 
 @font-face {
     font-family: 'Google-Sans';
-    src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
-    url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
-    font-weight: italic;
+    src: url(..//fonts/sans/GoogleSans-Italic.woff2) format('woff2'),
+    url(..//fonts/sans/GoogleSans-Italic.woff) format('woff');
+    font-weight: 500px;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Google-Sans';
-    src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
-    url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
-    font-weight: medium;
+    src: url(..//fonts/sans/GoogleSans-Medium.woff2) format('woff2'),
+    url(..//fonts/sans/GoogleSans-Medium.woff) format('woff');
+    font-weight: 500px;
     font-style: medium;
 }
 
@@ -66,10 +66,9 @@ body {
     text-decoration: none;
     color: #212832;
     font-size: 17px;
-    font-weight: 500;
+    max-width: max-content;
     display: inline-block;
-    height: 22px; 
-    line-height: 22px;
+    line-height: 40px;
 }
 
 .header__actions {
