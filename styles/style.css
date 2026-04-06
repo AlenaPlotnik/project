@@ -2,7 +2,7 @@
     font-family: 'Google-Sans';
     src: url(..//fonts/sans/GoogleSans-Regular.woff2) format('woff2'),
     url(..//fonts/sans/GoogleSans-Regular.woff) format('woff');
-    font-weight: 500px;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -10,15 +10,15 @@
     font-family: 'Google-Sans';
     src: url(..//fonts/sans/GoogleSans-BoldItalic.woff2) format('woff2'),
     url(..//fonts/sans/GoogleSans-BoldItalic.woff) format('woff');
-    font-weight: Italic;
-    font-style: bold;
+    font-weight: 700;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Google-Sans';
     src: url(..//fonts/sans/GoogleSans-Italic.woff2) format('woff2'),
     url(..//fonts/sans/GoogleSans-Italic.woff) format('woff');
-    font-weight: 500px;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -26,8 +26,8 @@
     font-family: 'Google-Sans';
     src: url(..//fonts/sans/GoogleSans-Medium.woff2) format('woff2'),
     url(..//fonts/sans/GoogleSans-Medium.woff) format('woff');
-    font-weight: 500px;
-    font-style: medium;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
@@ -78,8 +78,6 @@ body {
 }
 
 .btn-signup {
-    width: 102px;
-    height: 40px;
     border: 1px solid #212832;
     border-radius: 5px;
     background: transparent;
