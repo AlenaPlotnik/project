@@ -39,16 +39,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 100px;
+    padding: 47px 138px 0px 140px;
     max-width: 1160px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .header__logo img {
     width: 115px;
     height: 34px;
 }
-
 
 .nav-list {
     display: flex;
@@ -69,6 +68,7 @@ body {
     max-width: max-content;
     display: inline-block;
     line-height: 40px;
+    font-weight: 500;
 }
 
 .header__actions {
@@ -105,4 +105,125 @@ body {
     width: 23px;
     height: 22px;
     display: inline-block;
+}
+
+
+
+/*lkfvnfdklgnlkxjvlhfxkxghkkjfhgjfhjghfjkhgjgfjkghkcfjgkfhgjkhfjkghkjcfhjkghcfjkgkhfjkcjk*/
+
+.decore1{
+    width: 766px;
+    height: 872px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+
+} 
+
+.hero_content {
+    width: 1200px;
+    height: 764px;
+    padding: 18px 91px 0px 148px;
+    margin-inline: auto;
+    position: relative;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    right: -47px;
+    padding-top: 18px;
+}
+
+.hero_text {
+    width: 630px;
+    height: 535px;
+    padding: 112px 0px 117px 0px;
+}
+
+.hero_text h2 {
+    color: #DF6951;
+    font-size: 20px;
+    line-height: auto;
+    font-weight: 700px;
+    width: 410px;
+}
+
+.hero_text h1 {
+    color: #181E4B;
+    font-size: 84px;
+    line-height: 89px;
+    font-weight: 700px;
+    width: 545px;
+    letter-spacing: -4%;
+    margin-top: 24px;
+}
+
+.hero_text p {
+    color: #5E6282;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500px;
+    width: 477px;
+    margin-top: 30px;
+}
+
+.buttons_hero {
+    margin-top: 34px;
+    display: flex;
+    gap: 44px;
+    width: 379px;
+    height: 60px;
+}
+
+.Find {
+    color:white;
+    width: 170px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 19px 26px 18px 27px;
+    background:#F1A501;
+    border-radius: 10px;
+    border: 0;
+
+}
+.Find:hover{
+    opacity: 90%;
+}
+
+.Play {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    max-width: 165px;
+    height: 52px;
+    padding: 0px;
+    background: 0; /* Убираем серый фон кнопки */
+    border: 0; 
+}
+
+.Play:hover{
+    opacity: 90%;
+}
+
+.play__iconka{
+    width: 52px;
+    height: 52px;
+    padding-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.play__text {
+    width: 92px;
+    height: 26px;
+    padding: 30px 0px 11px 0px;
+    white-space: nowrap; 
+    font-size: 17px;
+    font-weight: 700px;
+    color: #686D77;
 }
