@@ -177,6 +177,8 @@ body {
     font-family: 'Google-Sans', sans-serif;
     font-size: 1.0625rem;
     font-weight: 500;
+    min-width: 120px;
+    min-height: 45px;
     color: #212832;
     cursor: pointer;
     display: flex;
@@ -221,13 +223,15 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     margin-inline: auto;
     position: relative;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
 }
 
 .hero__image {
-    position: absolute;
-    top: 0;
-    right: 30px;
-    padding-top: 18px;
+    object-fit: contain;
+    height: auto;
     max-width: 100%;
 }
 
@@ -277,7 +281,6 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     color:white;
     font-family: 'Google-Sans', sans-serif; 
     min-width: 170px;
-    min-height: 60px;
     font-weight: 500;
     font-size: 18px;
     padding: 19px 26px 18px 27px;
@@ -568,7 +571,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     min-height: 492px;
     margin: 186px auto 0 auto;
     font-family: 'Poppins', sans-serif;;
-    padding: 0 15px;
+    padding: 0 15px 0 40px;
     display: flex; 
     justify-content: space-between;
     align-items: center; 
@@ -764,7 +767,6 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .textials_1, .textials_2_1{
     max-width: 402px;
-    height: 96px;
     line-height: 32px;
     font-size: 16px;
     margin-bottom: 34px;
@@ -773,7 +775,6 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .textials_2{
     max-width: 101px;
-    height: 27px;
     line-height: auto;
     font-weight: 600;
     font-size: 18px;
@@ -782,7 +783,6 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .textials_3{
     max-width: 116px;
-    height: 21px;
     line-height: auto;
     font-size: 14px;
 }
@@ -795,7 +795,6 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .textials_2_2{
     max-width: 127px;
-    height: 27px;
     line-height: auto;
     font-weight: 600;
     font-size: 18px;
@@ -804,7 +803,6 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .textials_2_3{
     max-width: 127px;
-    height: 21px;
     line-height: auto;
     font-size: 14px;
 }
@@ -845,13 +843,14 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     justify-content: center;
     width: 1356px;
     min-height: 490px;
+    margin: 0 auto;
 }
 
 .sub1{
     margin: 0 auto;
     position: relative; 
     width: 1356px;
-    right: 50px;
+    right: 80px;
     margin-bottom: 146px;
 }
 
@@ -1009,7 +1008,14 @@ footer {
 
 .conpany_nav li {
     margin-bottom: 0.75rem;
+    list-style: none;
 }
+
+.conpany_nav ul a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
 
 .outbound {
     display: flex;
@@ -1067,7 +1073,7 @@ footer {
     .decore1{
         max-width: 60%;
         top: -100px;
-        left: 41%;
+        left: 42%;
     } 
 
     .hero_content {
@@ -1226,6 +1232,11 @@ footer {
     color: #fff; 
     border-radius: 20px;
     font-family: 'Volkhov', sans-serif;
+     transition: all 500ms ease;
+}
+
+.application_close:hover{
+    transform: scale(1.05);
 }
 
 .application__input {
