@@ -9,8 +9,9 @@
 </head>
 
 <body>
-    <header class="header">
-        <img class="decore1" src="images/Decore1.svg">
+    <div class="head">
+        <header class="header">
+        
         <div class="header__logo">
             <a href="index.html">
             <img src="images/Logo_Jadoo.svg" alt="Jadoo logo">
@@ -19,11 +20,11 @@
 
         <nav class="header__nav">
             <ul class="nav-list">
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Desitnations</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Hotels</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Flights</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Bookings</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Login</a></li>
+                <li class="nav-list__item"><a href="#"class="nav-list__link">Desitnations</a></li>
+                <li class="nav-list__item"><a href="#"class="nav-list__link">Hotels</a></li>
+                <li class="nav-list__item"><a href="#"class="nav-list__link">Flights</a></li>
+                <li class="nav-list__item"><a href="#"class="nav-list__link">Bookings</a></li>
+                <li class="nav-list__item"><a href="#"class="nav-list__link">Login</a></li>
             </ul>
         </nav>
 
@@ -34,11 +35,10 @@
                 <img src="images/Vector 1.svg" alt="arrow">
             </div>
         </div>
-    </header>
+        </header>
 
 
-
-    <main>
+        <main>
         <section class="hero">
             <div class="hero_content">
                 <div class="hero_text">
@@ -145,7 +145,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="Book-section">
             <div class="Book_content">
                 <div class="Book_a_trip">
                     <h2>Easy and Fast</h2>
@@ -189,7 +189,6 @@
                 </div>
                 <div class="Book_image">
                     <img class="Book_image_image" src="images/Book_image.svg">
-                    <div class="Book_image_blur"> </div>
                 </div>
             </div>
         </section>
@@ -263,8 +262,8 @@
                 <img class="Decore_sub" src="images/Decore_sub.svg">
             </div>
         </section>
-    </main>
-
+        </main>
+    </div>
     <footer>
         <div class="footer_container">
             <div class="company">
@@ -326,6 +325,8 @@
                     <input class="application__input" type="text" placeholder="Name">
                     <input class="application__input" type="tel" placeholder="Telephone">
                     <input class="application__input" type="email" placeholder="E-mail">
+                    <input class="application__input" type="password" placeholder="Password" required> 
+                    <button class="application__submit" type="submit">Register</button>
                 </form>
             </div>
         </section>

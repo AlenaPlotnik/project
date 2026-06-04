@@ -5,7 +5,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Google-Sans';
     src: url(..//fonts/sans/GoogleSans-BoldItalic.woff2) format('woff2'),
@@ -13,7 +12,6 @@
     font-weight: 700;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Google-Sans';
     src: url(..//fonts/sans/GoogleSans-Italic.woff2) format('woff2'),
@@ -21,7 +19,6 @@
     font-weight: 400;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Google-Sans';
     src: url(..//fonts/sans/GoogleSans-Medium.woff2) format('woff2'),
@@ -31,8 +28,6 @@
 }
 
 
-
-
 @font-face {
     font-family: 'Poppins';
     src: url(..//fonts/poppins/Poppins-Bold.woff2) format('woff2'),
@@ -40,7 +35,6 @@
     font-weight: 700;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Poppins';
     src: url(..//fonts/poppins/Poppins-Medium.woff2) format('woff2'),
@@ -48,7 +42,6 @@
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Poppins';
     src: url(..//fonts/poppins/Poppins-SemiBold.woff2) format('woff2'),
@@ -56,7 +49,6 @@
     font-weight: 600;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Poppins';
     src: url(..//fonts/poppins/Poppins-Regular.woff2) format('woff2'),
@@ -66,9 +58,6 @@
 }
 
 
-
-
-
 @font-face {
     font-family: 'Volkhov';
     src: url(..//fonts/volkhov/Volkhov-Bold.woff2) format('woff2'),
@@ -76,7 +65,6 @@
     font-weight: 700;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Volkhov';
     src: url(..//fonts/volkhov/Volkhov-BoldItalic.woff2) format('woff2'),
@@ -84,7 +72,6 @@
     font-weight: 700;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Volkhov';
     src: url(..//fonts/volkhov/Volkhov-Italic.woff2) format('woff2'),
@@ -92,7 +79,6 @@
     font-weight: 400;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Volkhov';
     src: url(..//fonts/volkhov/Volkhov-Regular.woff2) format('woff2'),
@@ -100,8 +86,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
- 
 @font-face {
     font-family: 'OpenSans';
     src: url(..//fonts/open_sans/OpenSans-Semibold.woff2) format('woff2'),
@@ -111,11 +95,19 @@
 }
 
 
-
-
 body {
     /* Если шрифт не подгрузился, используем системный без засечек */
     font-family: 'Google-Sans', sans-serif; 
+}
+
+.head{
+    max-width: 1440px; 
+    margin: 0 auto;    
+    padding: 0;  
+    width: 100%;    
+    background-image: url('../images/Decore1.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
 .header {
@@ -126,6 +118,8 @@ body {
     max-width: 72.5rem;
     margin: auto;
     position: relative;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .header__logo img {
@@ -134,8 +128,6 @@ body {
 }
 
 .decore1{
-    width: 48rem;
-    height: 54.5rem;
     position: absolute;
     z-index: -1;
     top: -6.25rem;
@@ -177,7 +169,7 @@ body {
     font-family: 'Google-Sans', sans-serif;
     font-size: 1.0625rem;
     font-weight: 500;
-    min-width: 120px;
+    min-width: 110px;
     min-height: 45px;
     color: #212832;
     cursor: pointer;
@@ -185,7 +177,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0; 
-    transition: all 500ms ease;
+    transition: transform 1s;
 }
 
 .btn-signup:hover{
@@ -207,32 +199,31 @@ body {
     display: inline-block;
 }
 
-
-
 /*lkfvnfdklgnlkxjvlhfxkxghkkjfhgjfhjghfjkhgjgfjkghkcfjgkfhgjkhfjkghkjcfhjkghcfjkgkhfjkcjkнкеаааааааан
 рпрорпfkoskgprtdmgpmpmdprgopkropdgkorpkdgopkfopgporkdopgkopkfodkglkrdogkopkfdopgkfopdgkporkdpokpgorkpdkgp
 gdroropkopgkopdkgoprkpokdropkgpokfkgporkodgkflkgpodrkgdlfkgpordkgolkdporkdogpklfgkpordkgplfkgopkrdopgkldfgopdd
 rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;dkl;fgko;rdkgk;gdrkog;kdl;gkro;*/
 
-
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .hero_content {
-    max-width: 1200px;
+    max-width: 100%;
     min-height: 764px;
-    padding: 18px 91px 0px 148px;
+    padding-left: 70px;
     margin-inline: auto;
     position: relative;
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap:30px;
 }
 
 .hero__image {
     object-fit: contain;
     height: auto;
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .hero_text {
@@ -254,7 +245,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     font-size: 84px;
     line-height: 89px;
     font-weight: 700;
-    width: 545px;
+    max-width: 545px;
     letter-spacing: -4%;
     margin-top: 24px;
     font-family: 'Volkhov', sans-serif;
@@ -265,7 +256,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-    width: 477px;
+    max-width: 477px;
     margin-top: 30px;
 }
 
@@ -287,7 +278,8 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     background:#F1A501;
     border-radius: 10px;
     border: 0;
-    transition: all 500ms ease;
+    transition: transform 0.3s;
+    
 
 }
 
@@ -313,7 +305,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 500ms ease; /*Для плавности*/
+    transition: transform 0.3s;
 }
 
 .play__iconka:hover{
@@ -337,7 +329,8 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 .services_content {
     width: 1300px;
     min-height: 525px;
-    padding: 97px 50px 0px 100px;
+    padding: 0;
+    padding-top: 90px;
     position: relative;
     margin-inline: auto;
     font-family: 'Poppins', sans-serif;
@@ -354,7 +347,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 .services_content h3 {
     font-weight: 700;
     color: #14183E;
-    font-size: 50px;
+    font-size: clamp(32px, 6vw, 50px);
     line-height: auto;
     font-family: 'Volkhov', sans-serif;
     text-align: center;
@@ -366,7 +359,6 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     top: 0;
     right: 0;
     z-index: -1;
-    padding: 97px 58px 0px 0px;
 }
 
 .best__services {
@@ -445,7 +437,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .Destinations_content {
     min-height: 617px;
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -462,7 +454,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .Destinations_content h3 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: clamp(32px, 6vw, 50px);
     color: #14183E;
     font-family: 'Volkhov', sans-serif;
     margin-bottom: 60px;
@@ -483,7 +475,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.04), 
                 0px 20px 20px rgba(0, 0, 0, 0.02);
     text-align: left;
-    transition: transform 0.3s ease;
+    transition: transform 2s;
 }
 
 .Dest-card:hover{
@@ -555,7 +547,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .Dest__Decore {
     position: absolute;
-    right: -35px;
+    right: 10%;
     top: 50%;
     z-index: -1;
 }
@@ -564,31 +556,31 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 /*fsepmgpsmrpmgpmrpgpskoprmopmpvtprtopkbrpeoyopekbopyoptrkopykboptypglrpvlelgp[le[t[v*/
 
-
+.Book-section{
+    padding: 120px 0 0 0;
+}
 
 .Book_content{
     max-width: 1200px;
-    min-height: 492px;
-    margin: 186px auto 0 auto;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;;
-    padding: 0 15px 0 40px;
     display: flex; 
     justify-content: space-between;
     align-items: center; 
-    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .Book_a_trip {
-    flex: 0 1 513px;
+    max-width: 100%;
 }
 
 .Book_a_trip h2{
-    line-height: auto;
     font-weight: 600;
     font-size: 18px;
     color: #5E6282;
     margin-top: 0;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .Book_a_trip h3{
@@ -596,9 +588,9 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     max-width: 513px;
     line-height: auto;
     font-weight: 700;
-    font-size: 50px;
     color: #14183E;
     margin-top: 0;
+    font-size: clamp(32px, 6vw, 50px);
 }
 
 .Book_Values{
@@ -647,33 +639,36 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .Book_image{
     position: relative;
-    flex: 0 1 485px; 
+    flex: 0 1 500px; 
     display: flex;
-    top: 130px;
-    right: -30px;
+    width: 100%;
+    justify-content: center;
+    transform: translateY(50px); 
+    height: 400px;
 }
 
 .Book_image_image{
     position: relative;
     z-index: 2; 
-    width: 100%; 
-    height: auto;
-    width: 585px;
+    width: 120%; 
+    object-fit: cover;  
+    object-position: top; 
 }
 
-.Book_image_blur{
+.Book_image::after {
+    content: "";
     position: absolute;
     z-index: 1;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 354px;
-    height: 367px;
+    top: 10%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
     background-color: #59B1E6;
-    opacity: 0.3;
-    filter: blur(60px);
-    
+    opacity: 0.4;
+    filter: blur(70px);
+    pointer-events: none; /* Чтобы фон не мешал кликам */
 }
+
 
 /*psrjtopjrdimig muijtoi j,oijfodbjij,hioj iodjioj[b,hihjiod,jboijfdoijfiodbj,dvjdiogdjfho oigfjio*/
 
@@ -681,22 +676,21 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1165px;
-    min-height: 356px;
+    max-width: 1200px;
     margin: 0 auto;
     gap: 60px;
-    padding-left: 25px;
     margin-top: 186px;
     font-family: "Poppins", sans-serif;
     margin-bottom: 96px;
+    flex-wrap: wrap;
 }
 
 .testimonials_1 {
-    flex: 1;
+    flex: 1 1 400px;
 }
 
 .testimonials_2 {
-    flex: 1;
+    flex: 1 1 550px;
     margin-right: 135px;
     position: relative; 
     height: 356px;
@@ -707,7 +701,8 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     padding: 30px;
     border-radius: 10px;
     background: #fff;
-    width: 504px;
+    width: 100%;
+    max-width: 504px;
     max-height: 245px;
 }
 
@@ -733,7 +728,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .Pagination {
     position: absolute;
-    right: -180px;
+    right: -110px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -841,7 +836,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 .sub {
     display: flex;
     justify-content: center;
-    width: 1356px;
+    width: 1200px;
     min-height: 490px;
     margin: 0 auto;
 }
@@ -849,22 +844,20 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 .sub1{
     margin: 0 auto;
     position: relative; 
-    width: 1356px;
-    right: 80px;
+    width: 1200px;
+    left: 0;
     margin-bottom: 146px;
 }
 
 .subscribe {
     position: relative; 
     display: flex;
-    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
-    width: 1257px;
+    width: 90%;
     height: 407px;
-    background: url('../images/Fiol_decore.svg') no-repeat center/cover;
+    background: url('../images/Fiol_decore.svg');
 }
 
 .subscribe h2{
@@ -881,8 +874,8 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .Telega {
     position: absolute;
-    top: -20px;
-    right: -20px;
+    top: -10px;
+    right: -10px;
 }
 
 .sub_content {
@@ -897,7 +890,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     position: relative;
     display: flex;
     align-items: center;
-    width: 421px;
+    width: 400px;
     height: 68px;
 }
 
@@ -934,7 +927,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
     font-size: 17px;
     line-height: auto;
     color:#FFFFFF;
-    transition: all 0.3s ease;
+    transition: transform 0.3s;
 }
 
 .sub_content button:hover {
@@ -944,7 +937,7 @@ rgkdokprkgopkd;glrkopgkdorkgorkg;dokgo;rk;dkor;gko;rdk;grkdo;gko;dkrogko;dr;gk;d
 
 .Decore_sub{
     position: absolute;
-    right: -40px;
+    right: 0;
     bottom: -70px;
     z-index: -1;
 }
@@ -1068,35 +1061,58 @@ footer {
 
 /*озщагкщзывчфчымщокугвзеощи84уецгпкур7геор90пщш8кгв9ое8п0к9ое90тпкг9уг09екыгн90гк9згн9вк8г9нзщхлепг90ехалшк*/
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     
+    .header {
+        padding: 3rem 5rem 0 5rem;
+    }
+
     .decore1{
-        max-width: 60%;
+        width: 100%;
         top: -100px;
         left: 42%;
     } 
 
-    .hero_content {
-        padding: 20px 40px;
+    .hero { 
         min-height: auto;
         display: flex;
-        align-items: center;
+        flex-direction: column;  
+    }
+
+    .hero_content{
+        flex-wrap: wrap;
+        padding-left: 0px;
     }
 
     .hero__image {
         position: static; 
-        max-width: 60%;
+        max-width: 45%;
+        display: none;
     }
   
     .hero_text {
-        max-width: 450px;
+        max-width: 800px;
         padding: 110px 0 100px ;
+    
+    }
+
+    .hero_text h2{
+        font-size: 8vw; 
+        line-height: 1.3;
+    }
+
+    .btn-signup{
+        min-width: 80px;
+    }
+
+    .testimonials_2{
+        max-width: 470px;
     }
 
     .services_content {
         width: 100%;
         max-width: 1140px; 
-        padding: 60px 20px 40px 20px;
+        padding: 60px 0 40px 0;
     }
 
     .services_content h3 {
@@ -1119,15 +1135,23 @@ footer {
         padding: 40px 10px;
     }
 
+    .Dest__Decore{
+        display: none;
+    }
+
     .services__decore {
         left: -39px;
         bottom: -110px;
         max-width: 130%;
     }
+    
+    .Book-section {
+        width: 100%;
+    }
 
     .Book_content {
-        margin-left: 20px;
-        max-width: 1150px;
+        width: 100%;
+        margin-left: 35px;
     }
     
     .Book_image_image{
@@ -1136,9 +1160,19 @@ footer {
         width: 565px;
     }
 
+    .step_text p {
+        max-width: 730px;
+        font-size: 2.2vw; 
+    }
+
     .testimonials {
         max-width: 1100px;
         margin-top: 160px;
+        margin-left: 40px;
+    }
+
+    .testimonials_2{
+        margin-left: 30px;
     }
 
     .testimonials_2_1, .testimonials_2_2 {
@@ -1148,6 +1182,7 @@ footer {
     .testimonials_1 h3{
         max-width: 409px;
         font-size: 45px;
+        margin-bottom: 20px;
     }
 
     .Pagination {
@@ -1155,24 +1190,46 @@ footer {
     }
     
     .sub {
-        max-width: 1100px;
+        max-width: 100%;
     }
 
     .sub1{
-        width: 1150px;
-        right: 0px;
-        margin-bottom: 146px;
+        width: 100%;
+        margin-bottom: 66px;
     }
 
     .subscribe {
-        width: 100%;
-        width: 1050px;
-        height: 350px;
+        width: 95%;
+        height: auto;
     }
-    
+
+    .subscribe h2 {
+        max-width: 80%;
+        font-size: 2.7vw;
+        line-height: 1.3;
+        margin-left: 90px;
+    }
+
+    .sub_content {
+        padding-bottom: 30px;
+    }
+
+    .sub_content_input{
+        width: 350px;
+    }
+
     .Decore_sub{
-        right: -70px;
-        bottom: -70px;
+        display: none;
+    }
+
+    .outbound {
+        gap: 60px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer_copyright {
+        margin-top: 0;
     }
 }
 
@@ -1185,6 +1242,7 @@ footer {
     height: 100%;
     background-color: rgba(22, 1, 1, 0.7); 
 }
+
 .application {
     position: absolute; 
     top: 50%; 
@@ -1232,7 +1290,7 @@ footer {
     color: #fff; 
     border-radius: 20px;
     font-family: 'Volkhov', sans-serif;
-     transition: all 500ms ease;
+    transition: transform 0.5s;
 }
 
 .application_close:hover{
@@ -1246,4 +1304,21 @@ footer {
     min-height: 50px;
     border-radius: 18px;
     padding-left: 20px;
+}
+.application__submit {
+    margin-top: 10px;
+    min-height: 50px;
+    font-size: 18px;
+    background-color: #43043c;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.application__submit:hover {
+    background-color: #5c0853;
+    transform: scale(1.01);
 }

@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function(){
     let closeModalButton = document.querySelector(".application_close");
 
     welcomeButtonModal.onclick = function(){
+
+        
         modalApplication.style.display = "flex";
     };
 
